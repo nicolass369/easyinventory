@@ -1,39 +1,41 @@
-/*
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
-*/
-/* 
-    Created on : 24/11/2021, 10:58:19 PM
-    Author     : Kubit
-*/
+
 
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: "arial";
+
 }
 html{
     font-size: 62.5%;
 }
 .container{
-    height: 100vh;
+    height: 90vh;
     width: 100%;
-    font-family: "arial";
+    background-color: none;
+    font-family: sans-serif;
     position: relative;
+
+
+}
+.logo{
+    font-weight: 600;
+    font-size: 3.8rem;
 }
 
 .menu{
     width: 100%;
-    display: flex;
-    padding: 20px 50px;
-    background-color: #B2B1A2;
+    display:flex;
+    align-self: center;
+    justify-content: space-between;
+    padding: 15px 40px;
+    background-color: #B2B1A2 ;
+    border: 1px solid black;
 }
 .menu ul{
     list-style: none;
-    text-align: right;
 }
+
 .menu ul li{
     position: relative;
     display: inline-block;
@@ -45,23 +47,26 @@ html{
     text-decoration:none ;
     padding:10px 20px ;
     color: #0C0C0C;
-    font-family:"arial";
+    font-family:"Open sans" ;
     text-decoration: none;
-
 }
+
 .menu ul li a:hover{
     color: #F7F9FA;
     transition: all .3s;
 }
+
 .submenu{
+
     position: absolute;
     width: 92%;
     visibility: hidden;
     opacity: 100%;
     transition: opacity 1.0s;
 }
+
 .submenu ul li a{
-    position: relative;
+    position: relativa;
     display: center;
     padding: none;
     color: #FCF9F9;
@@ -69,25 +74,29 @@ html{
     text-decoration: none;
 
 }
+
 .menu li:hover .submenu{
     visibility: visible;
     overflow: 1;
 }
+
 .submenu1{
     position: absolute;
     width: 100%;
     visibility: hidden;
-    opacity: 1;
+    opacity: o;
     transition: opacity 1.0s;
 }
+
 .submenu1 ul li a{
-    position: relative;
+    position: relativa;
     display: center;
     padding: none;
     color: #FCF9F9;
-    font-family: "arial";
+    font-family: "Open sans";
     text-decoration: none;
 }
+
 .menu li:hover .submenu1{
     visibility: visible;
     overflow: 1;
@@ -96,76 +105,77 @@ html{
 ul li{
     display: inline-block;
     list-style: none;
-    padding: 3px 10px;
+    padding: 6px 20px;
     font-weight: 500;
     font-size: 1.7rem;
     transition: all 0.3s ease 0s;
     cursor: pointer;
 }
+
 ul li:hover{
     border-radius: 20px;
     background-color: #ff4321;
     color: #fff;
 }
+
 header{
     position: absolute;
     bottom: 30%;
     padding: 0 50px;
 }
+
 header h1{
     font-size: 7rem;
 }
+
 header h2{
     font-size: 4rem;
 }
-button{
+
+header button{
     padding: 0 5px;
     width: 140px;
     outline: none;
     border: 0;
     height: 40px;
     font-weight: 500;
-    background-color:#ff4321;
+    background-color: #ff4321;
     transition: width 0.3215s;
     cursor: pointer;
     border-radius: 20px;
     color: #fff;
 }
-button:hover{
+
+header button:hover{
     width: 200px;
 }
-.container .emp{
+
+.container .proveedoresimg{
     position: absolute;
-    height: 500px;
-    width: 530px;
+    height: 450px;
+    width: 440px;
     right: 7%;
     bottom: 0;
     z-index: 999;
-    border-radius: 5px;
 }
 
 .pie{
-    background-color: #C6C6C6;
+    position: relative;
+    background-color: #B2B1A2  ;
     border: 1px solid black;
-    margin: 0;
 }
 
 .pie ul li a{
     color: black;
-    font-family: "arial";
+    font-family: "Open sans";
     text-decoration: none;
     list-style: none;
-    padding: 16px 20px;
+    padding: 0px 25px;
     font-size: 1.7rem;
     transition: all 0.3s ease 0s;
     cursor: pointer;
 }
 
-p{
-    margin-right: 3%
-}
-
 button{
-    border-style: solid;
-    border-radius: 10px;
+    border-radius: 20px;
 }
