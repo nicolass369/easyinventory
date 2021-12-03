@@ -1,28 +1,35 @@
 <?xml version='1.0' encoding='UTF-8' ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml"
-      xmlns:h="http://xmlns.jcp.org/jsf/html">
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets">
 
-    <nav class="menu">
-        <p class="logo"><img src="#{request.contextPath}/imagenes/Logo.png"></img></p>
-        <ul>
-            <button class="boton"><li>Inicio</li></button>
-        </ul>
-        <ul>
-            <button class="boton"><li>Ensamblaje</li></button>
-        </ul>
-        <ul>
-            <button class="boton"><li>cliente</li></button>
-        </ul>
-        <ul>
-            <button class="boton"><li>Acerca de nosotros</li></button>
-        </ul>
-    </nav>
-    <header>
-        <h1>BIENVENIDOS</h1>
-        <h2>Area de produccion</h2>
-        <button>Mas informacion</button>
-    </header>
-    <img class="proveedoresimg" src="#{request.contextPath}/imagenes/proveedoresimg.png" alt=""></img>
+    <ui:composition>
+        
+        <nav class="menu">
+            <p class="logo"><img src="#{request.contextPath}/imagenes/Logo.png"></img></p>
+            <br/>
+            <ul>
+                <button class="boton"><li>${boton1}</li></button>
+            </ul>
+            <ul>
+                <button class="boton"><li>${boton2}</li></button>
+            </ul>
+            <ul>
+                <button class="boton"><li>${boton3}</li></button>
+            </ul>
+            <ul>
+                <button class="boton"><li>${boton4}</li></button>
+            </ul>
+            <ul>
+                <button class="boton"><li>${boton5}</li></button>
+            </ul>
+            <ul>
+                <button class="boton"><li>Volver</li></button>
+            </ul>
+        </nav>
+    
+    </ui:composition>
+    
 </html>
 

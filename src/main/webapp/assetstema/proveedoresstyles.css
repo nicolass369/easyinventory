@@ -1,5 +1,4 @@
 
-
 *{
     padding: 0;
     margin: 0;
@@ -152,8 +151,6 @@ header button:hover{
 
 .container .proveedoresimg{
     position: absolute;
-    height: 450px;
-    width: 440px;
     right: 7%;
     bottom: 0;
     z-index: 999;

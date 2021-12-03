@@ -1,0 +1,82 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets">
+
+
+    <header>
+        <nav class="menu">
+            <img class="logo" src="../imagenes/Logo.png"/>
+            <ul>
+                <li><a href="proveedores.html">Volver</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <h1>Lista</h1>
+    <br/>
+
+    <table>
+        <tr>
+            <th>Material</th>
+            <th>Cantidad</th>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox"/>
+                <label>Material 1</label>
+            </td>
+            <td><input type="number" id="numero"/></td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox"/>
+                <label>Material 2</label>
+            </td>
+            <td><input type="number" id="numero"/></td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox"/>
+                <label>Material 3</label>
+            </td>
+            <td><input type="number" id="numero"></td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox">
+                    <label>Material 4</label></td>
+            <td><input type="number" id="numero"></td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox"/>
+                <label>Material 5</label>
+            </td>
+            <td><input type="number" id="numero"/></td>
+        </tr>
+    </table>
+    <br/>
+    <center>
+        <div class="notif">
+            <h2>Notificar a:</h2>
+            <label><b>Todos <input type="checkbox"/></b></label>
+            <br/>
+            <br/>
+            <select name="Proveedores" class="opciones">
+                <option disabled="" selected="">Seleccione los proveedores</option>
+                <option>Proveedor 1</option>
+                <option>Proveedor 2</option>
+                <option>Proveedor 3</option>
+                <option>Proveedor 4</option>
+            </select>
+            <br/>
+            <br/>
+            <li class="enviar"><a href="#">Enviar</a></li>
+        </div>
+    </center>	
+    <br/>
+
+</html>
+
