@@ -3,7 +3,6 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-
 }
 html{
     font-size: 62.5%;
@@ -14,9 +13,8 @@ html{
     background-color: none;
     font-family: sans-serif;
     position: relative;
-
-
 }
+
 .logo{
     font-weight: 600;
     font-size: 3.8rem;
@@ -44,9 +42,7 @@ html{
 .menu ul li a{
     display: block;
     text-decoration:none ;
-    padding:10px 20px ;
     color: #0C0C0C;
-    font-family:"Open sans" ;
     text-decoration: none;
 }
 
@@ -171,6 +167,10 @@ header button:hover{
     font-size: 1.7rem;
     transition: all 0.3s ease 0s;
     cursor: pointer;
+}
+
+.pie p{
+    padding-right: 30px;
 }
 
 button{

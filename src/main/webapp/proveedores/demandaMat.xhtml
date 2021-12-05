@@ -5,13 +5,14 @@
       xmlns:ui="http://xmlns.jcp.org/jsf/facelets">
     
     
-    <ui:composition template="/WEB-INF/templates/tema.xhtml">
+    <ui:composition template="../WEB-INF/templates/tema.xhtml">
         
-        <ui:param name="boton1" value="Producción"/>
-        <ui:param name="boton2" value="Proveedores"/>
-        <ui:param name="boton3" value="Ventas"/>
-        <ui:param name="boton4" value="Inventario"/>
-        <ui:param name="boton5" value="Acerca de nostros"/>
+        <ui:define name="areatrabajo">
+            <ui:include src="pv/pv demandaMat/areatrabajo.xhtml"/>
+        </ui:define>
+        <ui:define name="menusuperior">
+            <ui:include src="pv/transversal/menusuperior.xhtml"/>
+        </ui:define>
         
     </ui:composition>
     

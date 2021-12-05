@@ -1,0 +1,49 @@
+
+
+header{
+    width: 100%;
+    background-color: grey;
+}
+
+h1{
+    text-align: center;
+}
+
+table{
+    margin: auto;
+}
+
+tr th{
+    padding: 10px;
+}
+
+label{
+    font-family: "arial";
+    font-size: 10px;
+}
+
+.enviar{
+    list-style: none;
+    display: inline;
+    padding-top: 20px; 
+    padding-bottom: 6px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 10px;
+    background-color: grey;
+    border: solid 1px;
+}
+
+.enviar a{
+    text-decoration: none;
+    font-size: 30px;
+    color: black;
+    font-family: "arial";
+}
+
+.enviar:hover{
+    background-color: #ff4321;
+    transition: .5s;
+}
+
+

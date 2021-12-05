@@ -4,17 +4,16 @@
       xmlns:h="http://xmlns.jcp.org/jsf/html"
       xmlns:ui="http://xmlns.jcp.org/jsf/facelets">
 
-
-    <ui:composition template="../WEB-INF/templates/tema.xhtml">
+    <ui:composition>
         
-        <ui:define name="menusuperior">
-            <ui:include src="pv/transversal/menusuperior.xhtml"/>
-        </ui:define>
-        <ui:define name="areatrabajo">
-            <ui:include src="pv/pv publicarLista/areatrabajo.xhtml"/>
-        </ui:define>    
-        
+        <header>
+            <h1>BIENVENIDOS</h1>
+            <h2>Area de proveedores</h2>
+            <button>Mas informacion</button>
+        </header>
+        <img class="proveedoresimg" src="#{request.contextPath}/imagenes/proveedoresimg.png" height="420" width="420" alt=""></img>
+    
     </ui:composition>
-
+    
 </html>
 
