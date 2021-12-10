@@ -2,11 +2,49 @@
 .titulo-dm{
     text-align: center;
     font-size: 35px;
-    padding-top: 10px;
+    padding: 10px;
 }
 
-.table-dm{
+.table-dm, th{
+    border: 1px solid;
+    border-collapse: collapse;
+}
+
+.table-dm ul, th{
+    border: 1px solid;
+    border-collapse: collapse;
+    padding: 10px;
+    margin: auto;
+    font-size: 15px;
+}
+
+table{
+    background-color: #ECFDFF;
+    width: 90%;
+    height: 90%;
     padding: 35px;
 }
+
+.btn-ofertas{
+    list-style: none;
+    display: inline-block;
+    padding: 15px;
+}
+
+.btn-ofertas a{
+    font-size: 15px;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+li:hover{
+    background-color: #ff4321;
+    transition: .3s;
+    border-radius: 25px;
+}
+
 
 

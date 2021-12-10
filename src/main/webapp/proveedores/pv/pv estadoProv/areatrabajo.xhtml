@@ -1,0 +1,58 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets">
+
+    <ui:composition>
+
+        <h:head>
+            <link rel="stylesheet" type="text/css" href="#{request.contextPath}/assetstema/proveedores/stylesep.css"/>
+        </h:head>
+
+        <main>
+            <h1 class="titulo-ep">Estado Proveedores</h1>
+            <br/>
+            <table class="table-ep">
+                <p><b>Buscar proveedor:</b> <input class="buscar" type="text"/></p>
+                <br/>
+                <tr>
+                    <th>Proveedor</th>
+                    <th colspan="2">Estado</th>
+                </tr>
+
+                <tr>
+                    <td>
+                        <ul>Proveedor 1</ul>
+                        <ul>Proveedor 2</ul>
+                        <ul>Proveedor 3</ul>
+                        <ul>Proveedor 4</ul>
+                        <ul>Proveedor 5</ul>
+                        <ul>...</ul>
+                    </td>
+                    <td>
+                        <ul>Activo</ul>
+                        <ul>Activo</ul>
+                        <ul>Activo</ul>
+                        <ul>No activo</ul>
+                        <ul>No Activo</ul>
+                        <ul>...</ul>
+                    </td>
+                    <td>
+                        <li class="btn-editar"><a href="#"><b>Editar</b></a></li><br/>
+                        <li class="btn-editar"><a href="#"><b>Editar</b></a></li><br/>
+                        <li class="btn-editar"><a href="#"><b>Editar</b></a></li><br/>
+                        <li class="btn-editar"><a href="#"><b>Editar</b></a></li><br/>
+                        <li class="btn-editar"><a href="#"><b>Editar</b></a></li><br/>
+                        <li class="btn-editar"><a href="#"><b>Editar</b></a></li><br/>
+                    </td>
+                </tr>
+            </table>
+            <br/>
+            <br/>
+        </main>
+
+    </ui:composition>
+
+</html>
+
