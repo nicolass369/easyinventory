@@ -2,7 +2,8 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml"
       xmlns:h="http://xmlns.jcp.org/jsf/html"
-      xmlns:ui="http://xmlns.jcp.org/jsf/facelets">
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:c="http://xmlns.jcp.org/jsp/jstl/core">
 
     <ui:composition>
 
@@ -14,39 +15,31 @@
             <h1 class="titulo-ep">Estado Proveedores</h1>
             <br/>
             <table class="table-ep">
-                <p><b>Buscar proveedor:</b> <input class="buscar" type="text"/></p>
-                <br/>
-                <tr>
-                    <th>Proveedor</th>
-                    <th colspan="2">Estado</th>
-                </tr>
-
-                <tr>
-                    <td>
-                        <ul>Proveedor 1</ul>
-                        <ul>Proveedor 2</ul>
-                        <ul>Proveedor 3</ul>
-                        <ul>Proveedor 4</ul>
-                        <ul>Proveedor 5</ul>
-                        <ul>...</ul>
-                    </td>
-                    <td>
-                        <ul>Activo</ul>
-                        <ul>Activo</ul>
-                        <ul>Activo</ul>
-                        <ul>No activo</ul>
-                        <ul>No Activo</ul>
-                        <ul>...</ul>
-                    </td>
-                    <td>
-                        <li class="btn-editar"><a href="#"><b>Editar</b></a></li><br/>
-                        <li class="btn-editar"><a href="#"><b>Editar</b></a></li><br/>
-                        <li class="btn-editar"><a href="#"><b>Editar</b></a></li><br/>
-                        <li class="btn-editar"><a href="#"><b>Editar</b></a></li><br/>
-                        <li class="btn-editar"><a href="#"><b>Editar</b></a></li><br/>
-                        <li class="btn-editar"><a href="#"><b>Editar</b></a></li><br/>
-                    </td>
-                </tr>
+                <thead>
+                    <tr>
+                        <th>Usuario</th>
+                        <th>Nombres</th>
+                        <th>Apellidos</th>
+                        <th>Email</th>
+                        <th>Teléfono</th>
+                        <th>Genero</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                
+                <tbody>
+                    <c:forEach var="usu" items="#{usuariosSession.verUsu()}">
+                        <tr>
+                            <td>#{usu.nomUsuario}</td>
+                            <td>#{usu.nombres}</td>
+                            <td>#{usu.apellidos}</td>
+                            <td>#{usu.email}</td>
+                            <td>#{usu.numTelefono}</td>
+                            <td>#{usu.genero}</td>
+                            <td>Quemado</td>
+                        </tr>
+                    </c:forEach>
+                </tbody>
             </table>
             <br/>
             <br/>

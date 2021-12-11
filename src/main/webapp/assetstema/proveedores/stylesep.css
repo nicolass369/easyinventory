@@ -5,6 +5,10 @@
     padding: 10px;
 }
 
+thead{
+    background-color: red;
+}
+
 table, th, td{
     margin: auto;
     border: 2px solid black;
@@ -24,7 +28,7 @@ table{
     height: 90%;
 }
 
-table th, ul, a{
+table th, td{
     font-size: 17px;
 }
 

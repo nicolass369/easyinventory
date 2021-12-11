@@ -22,7 +22,7 @@
         <welcome-file>index.xhtml</welcome-file>
     </welcome-file-list>
     <data-source>
-        <name>java:app/ds_easyinventory</name>
+        <name>java:app/easyinventorydatasource</name>
         <class-name>com.mysql.cj.jdbc.MysqlDataSource</class-name>
         <server-name>localhost</server-name>
         <port-number>3306</port-number>

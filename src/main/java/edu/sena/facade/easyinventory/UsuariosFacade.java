@@ -6,9 +6,11 @@
 package edu.sena.facade.easyinventory;
 
 import edu.sena.entity.easyinventory.Usuarios;
+import java.util.List;
 import javax.ejb.Stateless;
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
+import javax.persistence.Query;
 
 /**
  *
@@ -27,6 +29,13 @@ public class UsuariosFacade extends AbstractFacade<Usuarios> implements Usuarios
 
     public UsuariosFacade() {
         super(Usuarios.class);
+    }
+    
+    @Override
+    public List<Usuarios> verUsu(){
+        em.getEntityManagerFactory().getCache().evictAll();
+        Query pru=em.createQuery("SELECT c FROM Usuarios c");
+        return pru.getResultList();
     }
     
 }
