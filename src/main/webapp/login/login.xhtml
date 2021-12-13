@@ -1,0 +1,55 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:html5="http://xmlns.jcp.org/jsf/passthrough"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+    <h:head>
+       	<meta charset="UTF-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<title>From Login</title>
+	<link rel="stylesheet" type="text/css" href="#{request.contextPath}/assetstema/inicio/inicio.css"/>
+     </h:head>
+    <h:body>
+        <div class="login-box">
+        <img class="avatar" src="#{request.contextPath}/imagenes/Easy Inventory Logo.jpg"></img>
+        <h1>Login Aqui</h1>
+
+            <h:form>
+
+               <h:outputLabel for="inp-usuario" value="Usuario"></h:outputLabel>
+               <h:inputText value="#{usuariosSession.usuarioIn}" 
+                            class="usuarioinp"
+                            id="inp-usuario"
+                            required="true"
+                            requiredMessage=" *Usuario incorrecto"></h:inputText>
+               <h:message class="error" for="inp-usuario" style="color: red"/>
+               <br/>
+
+               <h:outputLabel for="inp-clave" value="Clave"></h:outputLabel>
+               <h:inputText value="#{usuariosSession.claveIn}"
+                            class="claveinp"
+                            html5:type="password" 
+                            id="inp-clave"
+                            required="true"
+                            requiredMessage=" *Contraseña incorrecta"></h:inputText>
+               <h:message class="error" for="inp-clave" style="color: red"/>
+               <br/>
+               <br/>
+
+               <h:commandButton action="#{usuariosSession.validarUsuario()}" value="Entrar" class="submit"></h:commandButton>
+
+               <h1><a href="#">Olvide mi contraseña</a></h1>
+
+               <h1><a href="#">Crear cuenta</a></h1>
+
+
+            </h:form>
+
+        </div>
+       
+
+    </h:body>
+</html>
+

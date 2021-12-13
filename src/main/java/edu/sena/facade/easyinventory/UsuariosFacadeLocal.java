@@ -32,4 +32,6 @@ public interface UsuariosFacadeLocal {
 
     public List<Usuarios> verUsu();
     
+    public Usuarios inicioSesion(String usuarioIn, String claveIn);
+    
 }

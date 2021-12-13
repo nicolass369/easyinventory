@@ -38,4 +38,17 @@ public class UsuariosFacade extends AbstractFacade<Usuarios> implements Usuarios
         return pru.getResultList();
     }
     
+    @Override
+    public Usuarios inicioSesion(String usuarioIn, String claveIn){
+        try {
+            Query in=em.createQuery("SELECT u FROM Usuarios u WHERE u.nomUsuario = :usuarioIn AND u.contraseña = :claveIn");
+            in.setParameter("usuarioIn", usuarioIn);
+            in.setParameter("claveIn", claveIn);
+            return (Usuarios) in.getSingleResult();
+        } catch (Exception e) {
+            return null;
+        }
+        
+    }
+    
 }
